@@ -1,10 +1,11 @@
 ﻿Console.Write("Введите x: ");
 double x = Convert.ToDouble(Console.ReadLine());
 
+int n;
 do
 {
     Console.Write("Введите n: ");
-    int n = Convert.ToInt32(Console.ReadLine());
+    n = Convert.ToInt32(Console.ReadLine());
 }
 while (n < 1);
 
