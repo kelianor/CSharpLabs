@@ -1,4 +1,7 @@
-﻿for (int i = 1; i <= 10; i++)
+﻿Console.Write("R = ");
+double r = Convert.ToDouble(Console.ReadLine());
+
+for (int i = 1; i <= 10; i++)
 {
     Console.WriteLine($"Введите координаты для {i}-го  выстрела:");
     
@@ -7,9 +10,6 @@
     
     Console.Write("Y = ");
     double y = Convert.ToDouble(Console.ReadLine());
-
-    Console.Write("R = ");
-    double r = Convert.ToDouble(Console.ReadLine());
 
     bool collides = false;
     if(x > 0 & y > 0)

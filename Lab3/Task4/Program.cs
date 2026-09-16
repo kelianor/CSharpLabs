@@ -1,7 +1,8 @@
-﻿do
+﻿int n;
+do
 {
     Console.Write("Введите N: ");
-    int n = Convert.ToInt32(Console.ReadLine());
+    n = Convert.ToInt32(Console.ReadLine());
 }
 while (n < 0);
 

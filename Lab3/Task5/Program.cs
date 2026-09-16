@@ -1,5 +1,10 @@
-﻿Console.Write("Введите x: ");
-double x = Convert.ToDouble(Console.ReadLine());
+﻿double x;
+do
+{
+    Console.Write("Введите x: ");
+    x = Convert.ToDouble(Console.ReadLine());
+}
+while(x == 0);
 
 int n;
 do
@@ -31,13 +36,6 @@ for (int k = 1; k <= n; k++)
 
     for (int m = 4; m <= upperM; m++)
     {
-        if (m == 2)
-        {
-            Console.WriteLine($"Член ряда k = {k} пропущен");
-            skipTerm = true;
-            break;
-        }
-        
         product *= (double)(m * m - 9) / (m - 2);
     }
 

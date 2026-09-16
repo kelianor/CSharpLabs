@@ -33,5 +33,5 @@ for(double x = x_begin; x <= x_end; x += delta_x)
     {
         y = -1;
     }
-    Console.WriteLine($"\t{x}\t|\tf({y})\t");
+    Console.WriteLine($"\t{x}\t|\t{y}\t");
 }
