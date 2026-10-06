@@ -1,4 +1,6 @@
-﻿int rows, cols;
+﻿Random rnd = new Random();
+
+int rows, cols;
 
 Console.Write("Введите количество строк: ");
 rows = Convert.ToInt32(Console.ReadLine());
@@ -11,9 +13,10 @@ for(int i = 0; i < rows; i++)
 {
     for(int j = 0; j < cols; j++)
     {
-        Console.Write($"arr[{i}, {j}] = ");
-        arr[i, j] = Convert.ToDouble(Console.ReadLine());
+        arr[i, j] = rnd.Next(10);
+        Console.Write($"{arr[i, j]}\t");
     }
+    Console.WriteLine();
 }
 
 Console.Write("Введите число: ");
