@@ -18,7 +18,7 @@ for (int i = 1; i <= 10; i++)
     }
     else if (x < 0 & y < 0)
     {
-        collides = y > r - x;
+        collides = y > -x - r;
     }
     
     if(collides)
